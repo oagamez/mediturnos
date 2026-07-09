@@ -11,6 +11,8 @@ import com.mediturnos.repository.security.RolRepository;
 import com.mediturnos.repository.security.UsuarioRepository;
 import com.mediturnos.service.interfaces.security.UsuarioService;
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -22,6 +24,7 @@ public class UsuarioServiceImpl implements UsuarioService {
     private final UsuarioRepository usuarioRepository;
     private final RolRepository rolRepository;
     private final UsuarioMapper usuarioMapper;
+    private final PasswordEncoder passwordEncoder;
 
     @Override
     public UsuarioResponse crear(UsuarioRequest request) {
@@ -38,6 +41,7 @@ public class UsuarioServiceImpl implements UsuarioService {
                 .orElseThrow(() -> new ResourceNotFoundException("Rol no encontrado."));
 
         Usuario usuario = usuarioMapper.toEntity(request);
+        usuario.setPassword(passwordEncoder.encode(request.getPassword()));
         usuario.setRol(rol);
 
         Usuario guardado = usuarioRepository.save(usuario);
