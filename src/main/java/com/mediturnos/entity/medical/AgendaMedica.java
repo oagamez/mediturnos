@@ -1,5 +1,5 @@
 package com.mediturnos.entity.medical;
 
-public class Horario {
+public class AgendaMedica {
     
 }
