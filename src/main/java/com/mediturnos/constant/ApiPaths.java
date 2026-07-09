@@ -24,10 +24,10 @@ public final class ApiPaths {
     public static final String MEDICOS = API + "/medicos";
     public static final String ESPECIALIDADES = API + "/especialidades";
     public static final String CONSULTORIOS = API + "/consultorios";
-    public static final String HORARIOS = API + "/horarios";
+    public static final String AGENDAS_MEDICAS = API + "/agendas-medicas";
 
     // Citas
     public static final String CITAS = API + "/citas";
+    public static final String RECEPCION = API + "/recepcion";
     public static final String AUDITORIA_CITAS = API + "/auditoria-citas";
-
 }
