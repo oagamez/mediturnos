@@ -29,5 +29,6 @@ public final class ApiPaths {
     // Citas
     public static final String CITAS = API + "/citas";
     public static final String RECEPCION = API + "/recepcion";
+    public static final String PANTALLA_MEDICO = API + "/pantalla-medico";
     public static final String AUDITORIA_CITAS = API + "/auditoria-citas";
 }
