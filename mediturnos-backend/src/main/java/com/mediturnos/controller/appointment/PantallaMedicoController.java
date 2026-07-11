@@ -1,4 +1,4 @@
-package com.mediturnos.controller.appointment;
+/*package com.mediturnos.controller.appointment;
 
 import com.mediturnos.constant.ApiPaths;
 import com.mediturnos.dto.appointment.response.CitaResponse;
@@ -43,4 +43,4 @@ public class PantallaMedicoController {
 
     }
 
-}
+}*/
