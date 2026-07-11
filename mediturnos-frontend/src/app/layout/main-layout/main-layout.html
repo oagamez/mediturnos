@@ -1,0 +1,87 @@
+<mat-toolbar color="primary">
+
+    <span class="logo">
+
+        <mat-icon>medical_services</mat-icon>
+
+        MEDITURNOS
+
+    </span>
+
+    <span class="spacer"></span>
+
+    <span>Orlando Agamez</span>
+
+</mat-toolbar>
+
+<mat-sidenav-container class="container">
+
+    <mat-sidenav
+        mode="side"
+        opened>
+
+        <mat-nav-list>
+
+            <a mat-list-item routerLink="">
+
+                <mat-icon>dashboard</mat-icon>
+
+                Dashboard
+
+            </a>
+
+            <a mat-list-item routerLink="/pacientes">
+
+                <mat-icon>groups</mat-icon>
+
+                Pacientes
+
+            </a>
+
+            <a mat-list-item>
+
+                <mat-icon>medical_information</mat-icon>
+
+                Médicos
+
+            </a>
+
+            <a mat-list-item>
+
+                <mat-icon>meeting_room</mat-icon>
+
+                Consultorios
+
+            </a>
+
+            <a mat-list-item>
+
+                <mat-icon>calendar_month</mat-icon>
+
+                Agenda Médica
+
+            </a>
+
+            <a mat-list-item>
+
+                <mat-icon>event_note</mat-icon>
+
+                Citas
+
+            </a>
+
+        </mat-nav-list>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+        <div class="content">
+
+            <router-outlet></router-outlet>
+
+        </div>
+
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

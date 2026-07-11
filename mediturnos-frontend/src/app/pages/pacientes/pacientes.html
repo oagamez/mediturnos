@@ -1,0 +1,33 @@
+<h1>Pacientes</h1>
+
+<table border="1" width="100%" cellspacing="0" cellpadding="8">
+
+    <thead>
+
+        <tr>
+
+            <th>Documento</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Teléfono</th>
+            <th>EPS</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr *ngFor="let p of pacientes">
+
+            <td>{{p.documento}}</td>
+            <td>{{p.nombres}}</td>
+            <td>{{p.apellidos}}</td>
+            <td>{{p.telefono}}</td>
+            <td>{{p.eps}}</td>
+
+        </tr>
+
+    </tbody>
+
+</table>

@@ -1,0 +1,27 @@
+.container{
+    height: calc(100vh - 64px);
+}
+
+.spacer{
+    flex:1;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+mat-sidenav{
+    width:250px;
+}
+
+.content{
+    padding:25px;
+}
+
+mat-icon{
+    margin-right:10px;
+}
